@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebDev Studio - Build & Sell Websites</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Top Navigation Bar -->
+    <header>
+        <div class="logo">Dev✨Build</div>
+        <nav>
+            <a href="#services">Our Services</a>
+            <a href="#pricing">Packages</a>
+            <a href="#contact">Order Now</a>
+        </nav>
+    </header>
+
+    <!-- Main Welcome Banner -->
+    <section class="hero">
+        <h1>Get Your Premium Website Today</h1>
+        <p>Hum aap k business k liye high-quality, fast aur professional websites bnaty hain.</p>
+        <a href="#contact" class="btn-main">Start Your Project</a>
+    </section>
+
+    <!-- Services / Work Section -->
+    <section id="services" class="section-padding">
+        <h2>What Kind of Websites We Build?</h2>
+        <div class="services-grid">
+            <div class="service-box">
+                <i class="fas fa-laptop-code" style="font-size: 40px; color: #4f46e5; margin-bottom: 20px;"></i>
+                <h3>Portfolio Sites</h3>
+                <p>Personal brands aur cv k liye khoobsurat websites.</p>
+            </div>
+            <div class="service-box">
+                <i class="fas fa-briefcase" style="font-size: 40px; color: #4f46e5; margin-bottom: 20px;"></i>
+                <h3>Business Sites</h3>
+                <p>Company profiles aur local businesses ko online lane k liye.</p>
+            </div>
+            <div class="service-box">
+                <i class="fas fa-shopping-basket" style="font-size: 40px; color: #4f46e5; margin-bottom: 20px;"></i>
+                <h3>E-Commerce Stores</h3>
+                <p>Products online sell krne k liye mukammal shopping stores.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing / Packages Section -->
+    <section id="pricing" class="pricing-section">
+        <h2>Our Pricing Packages</h2>
+        <div class="price-cards">
+            <div class="card">
+                <h3>Basic Site</h3>
+                <p class="price">$50</p>
+                <ul>
+                    <li><i class="fas fa-check" style="color: #10b981; margin-right: 8px;"></i> 1 Page Design</li>
+                    <li><i class="fas fa-check" style="color: #10b981; margin-right: 8px;"></i> Responsive Layout</li>
+                    <li><i class="fas fa-check" style="color: #10b981; margin-right: 8px;"></i> Contact Form</li>
+                </ul>
+                <a href="#contact" class="btn-sm">Order Now</a>
+            </div>
+            <div class="card featured">
+                <h3>Premium Store</h3>
+                <p class="price">$150</p>
+                <ul>
+                    <li><i class="fas fa-check" style="color: #4f46e5; margin-right: 8px;"></i> Multi-page Website</li>
+                    <li><i class="fas fa-check" style="color: #4f46e5; margin-right: 8px;"></i> Shopping Cart</li>
+                    <li><i class="fas fa-check" style="color: #4f46e5; margin-right: 8px;"></i> Payment Integration</li>
+                </ul>
+                <a href="#contact" class="btn-sm">Order Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Order Form Section -->
+    <section id="contact" class="contact-section">
+        <h2>Let's Start Your Project</h2>
+        <p>Neeche form fill krein, hum aap se fauran contact krein ge.</p>
+        <form id="orderForm">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <select required>
+                <option value="">Select Package</option>
+                <option value="basic">Basic Site ($50)</option>
+                <option value="premium">Premium Store ($150)</option>
+            </select>
+            <textarea placeholder="Describe your website requirements..." rows="5" required></textarea>
+            <button type="button" onclick="submitForm()" class="btn-main">Submit Order</button>
+        </form>
+    </section>
+
+    <!-- JavaScript File Link -->
+    <script src="script.js"></script>
+
+</body>
+</html>
